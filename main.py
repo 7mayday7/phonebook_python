@@ -63,7 +63,7 @@ def create_contact():
     phone = input('Телефон: ')
     comment = input('Комментарий: ')
     with open('phonebook.txt', 'a', encoding='utf-8') as f:
-        f.write(f'\n{name}:{phone}:{comment}\n')
+        f.write(f'{name}:{phone}:{comment}\n')
     print('Новый контакт добавлен!')
 
 
