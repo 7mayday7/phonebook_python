@@ -78,12 +78,13 @@ def view_contact():
 
 
 if __name__ == '__main__':
-    print("""\nГлавное меню
+    main_menu = ("""\nГлавное меню
                1. Просмотреть контакты
                2. Создать контакт
                3. Найти контакт
                4. Изменить контакт
                5. Удалить контакт\n""")
+    print(main_menu)
 
     while True:
         choice = int(input('Выберите действие: '))
@@ -98,5 +99,9 @@ if __name__ == '__main__':
             edit_contact()
         elif choice == 5:
             delete_contact()
+        elif choice == 6:
+            print(main_menu)
+        elif choice == 7:
+            exit()
         else:
             print('Неизвестная команда')
